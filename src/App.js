@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Banner, Contact, Footer, Newsletter, Skills, Team, Testimonials } from './Sections';
+import { BackToTopBtn } from './component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App overflow-hidden">
+      <Banner />
+      <Testimonials />
+      <Skills />
+      <Team />
+      <Newsletter />
+      <Contact />
+      <Footer />
+      <BackToTopBtn />
     </div>
   );
 }
